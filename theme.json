@@ -8,11 +8,6 @@
     "color": {
       "palette": [
         {
-          "name": "BMA Dark",
-          "slug": "bma-dark",
-          "color": "#716558"
-        },
-        {
           "name": "Primary",
           "slug": "primary",
           "color": "#faab45"
@@ -26,6 +21,11 @@
           "name": "Dark",
           "slug": "dark",
           "color": "#1F2937"
+        },
+        {
+          "name": "BMA Dark",
+          "slug": "bma-dark",
+          "color": "#716558"
         },
         {
           "name": "Light",

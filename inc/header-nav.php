@@ -1,7 +1,7 @@
 <header>
 	<div class="bg-white border-gray-200 dark:bg-neutral-900 dark:border-gray-700">
 		<div class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
-			<a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+			<a href="<?php echo home_url(); ?>" class="flex items-center space-x-3 rtl:space-x-reverse">
 				<svg
 				id="bma-logo"
 				xmlns="http://www.w3.org/2000/svg"

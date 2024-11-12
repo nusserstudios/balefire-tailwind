@@ -31,12 +31,14 @@ module.exports = {
             fontSize: balefire.fontSizeMapper(balefire.theme('settings.typography.fontSizes', theme))
         },
         screens: {
-            'xs': '480px',
-            'sm': '600px',
-            'md': '782px',
-            'lg': balefire.theme('settings.layout.contentSize', theme),
-            'xl': balefire.theme('settings.layout.wideSize', theme),
-            '2xl': '1440px'
+            'xs': '375px',
+            'sm': '640px',
+            'md': '768px',
+            'lg': '1024px',
+            'xl': '1280px',
+            '2xl': '1440px',
+            'normal': balefire.theme('settings.layout.contentSize', theme),
+            'wide': balefire.theme('settings.layout.wideSize', theme),
         }
     },
     plugins: [
