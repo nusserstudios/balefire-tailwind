@@ -44,8 +44,7 @@ module.exports = {
         require('@tailwindcss/typography'),
         require('@tailwindcss/container-queries'),
         require('@tailwindcss/forms'),
-        require('@tailwindcss/aspect-ratio'),
-        require('preline/plugin'),
+        require('@tailwindcss/aspect-ratio')
     ],
 
 };
