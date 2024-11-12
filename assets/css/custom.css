@@ -1,0 +1,150 @@
+h1 {
+    @apply text-7xl;
+}
+h2 {
+    @apply text-5xl;
+}
+h3 {
+    @apply text-3xl;
+}
+h4 {
+    @apply text-2xl;
+}
+h5 {
+    @apply text-xl;
+}
+h6 {
+    @apply text-lg;
+}
+
+header#masthead .sub-menu {
+    @apply relative w-full md:mt-1 md:rounded-lg md:border md:shadow-lg md:bg-white md:border-neutral-200 md:w-auto md:text-base md:z-10 md:absolute md:dark:bg-neutral-800 md:dark:border-neutral-600;
+}
+
+ul.sub-menu {
+    @apply absolute p-2;
+}
+
+header#masthead .sub-menu li {
+    @apply w-full py-2 text-neutral-700 md:mr-4 dark:text-white;
+}
+
+/* Ensuring the submenu items are relatively positioned */
+#primary-menu li:has(ul.sub-menu) > a {
+    @apply relative md:mr-4;
+}
+
+/* Creating the triangle shape using the ::after pseudo-element */
+#primary-menu li:has(ul.sub-menu) > a::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    right: -14px;
+    transform: translateY(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid currentColor; /* using the text color of the anchor */
+    display: inline-block;
+}
+
+#primary-menu-toggle {
+   @apply ml-auto;
+}
+
+article > *:not(.entry-content),
+.entry-content > * {
+    @apply mx-auto text-xl max-w-content;
+}
+
+header.entry-header {
+    @apply capitalize;
+}
+
+.entry-content, .block-editor-block-list__layout {
+    h1 {
+        @apply text-2xl capitalize;
+    }
+
+    h2 {
+        @apply text-xl;
+    }
+
+    h3 {
+        @apply text-lg;
+    }
+
+    p, ul, ol {
+        a {
+            @apply text-primary underline;
+
+            &:hover {
+                @apply no-underline;
+            }
+        }
+
+        @apply mb-8;
+    }
+
+    ul:not(.block-editor-block-variation-picker__variations) {
+        li {
+            @apply list-disc list-inside;
+        }
+    }
+
+    ol {
+        li {
+            @apply list-decimal list-inside;
+        }
+    }
+}
+
+#comments { 
+    .comments-title {
+        @apply text-2xl font-bold capitalize text-neutral-900 dark:text-neutral-100;
+    }
+    .comment-meta {
+        @apply mt-6;
+    }
+    .comment-author img {
+        @apply inline-flex;    
+    }
+    form label {
+        @apply block py-4 text-base font-medium text-neutral-700 dark:text-white;
+    
+    }
+    p:nth-child(1) {
+        @apply py-6;
+    }
+    
+    p.comment-notes {
+        @apply pt-4;
+    }
+
+    [type='text'], input:where(:not([type])), [type='email'], [type='url'], [type='password'], [type='number'], [type='date'], [type='datetime-local'], [type='month'], [type='search'], [type='tel'], [type='time'], [type='week'], [multiple], textarea, select {
+        @apply shadow-sm bg-neutral-50 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary dark:shadow-sm;
+    }
+
+    .comment-form-cookies-consent {
+        @apply flex flex-row items-center gap-3 my-4;
+    }
+
+    input.comment-consent-input [type='checkbox'] {
+        @apply items-center w-4 h-4 rounded bg-neutral-100 border-neutral-300 text-primary focus:ring-primary dark:focus:ring-primary dark:ring-offset-neutral-800 focus:ring-2 dark:bg-neutral-700 dark:border-neutral-600;
+    }
+    
+    label.comment-consent-label {
+        @apply items-center text-sm font-normal text-neutral-500 ml-9 dark:text-neutral-400;
+    }
+    
+    textarea {
+        @apply block p-2.5 w-full text-sm text-neutral-900 bg-neutral-50 rounded-lg shadow-sm border border-neutral-300 focus:ring-primary focus:border-primary dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary min-h-[10rem];
+    }
+
+    [type='submit'] {
+        @apply px-5 py-3 text-sm font-medium text-center text-white rounded-lg bg-primary sm:w-fit hover:bg-primary focus:ring-4 focus:outline;
+    }
+}
+
+.page-title {
+    @apply text-4xl font-bold capitalize text-neutral-900 dark:text-neutral-100;
+}
