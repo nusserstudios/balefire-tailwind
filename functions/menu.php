@@ -2,11 +2,11 @@
 // Register menus
 register_nav_menus(
 	array(
-		'main-nav'		=> __( 'Main Menu', 'balefirewp' ),		// Main nav in header
-		'secondary-nav'		=> __( 'Secondary Navigation', 'balefirewp' ),		// Secondary nav
-		'ancillary-nav'		=> __( 'Ancillary Navigation', 'balefirewp' ),		// Secondary nav
-		//'offcanvas-nav'	=> __( 'Off-Canvas Menu', 'balefirewp' ),	// Off-Canvas nav
-		'footer-links'	=> __( 'Footer Menu', 'balefirewp' )			// Secondary nav in footer
+		'main-nav'		=> __( 'Main Menu', 'balefire' ),		// Main nav in header
+		'secondary-nav'		=> __( 'Secondary Navigation', 'balefire' ),		// Secondary nav
+		'ancillary-nav'		=> __( 'Ancillary Navigation', 'balefire' ),		// Secondary nav
+		//'offcanvas-nav'	=> __( 'Off-Canvas Menu', 'balefire' ),	// Off-Canvas nav
+		'footer-links'	=> __( 'Footer Menu', 'balefire' )			// Secondary nav in footer
 	)
 );
 

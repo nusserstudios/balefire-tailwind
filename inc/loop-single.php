@@ -10,7 +10,11 @@
 		<?php the_post_thumbnail('large'); ?>
 		<?php the_content(); ?>
 	</div>
-	<?php wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'balefirewp' ), 'after'  => '</div>' ) ); ?>
-	<p class="tags"><?php the_tags('<span class="tags-title">' . __( 'Tags:', 'balefirewp' ) . '</span> ', ', ', ''); ?></p>
-	<?php //comments_template(); ?>												
+	<?php wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'balefire' ), 'after'  => '</div>' ) ); ?>
+	<p class="tags"><?php the_tags('<span class="tags-title">' . __( 'Tags:', 'balefire' ) . '</span> ', ', ', ''); ?></p>
+	<?php
+		if (comments_open() || get_comments_number()) :
+			comments_template();
+		endif;
+	?>												
 </article>

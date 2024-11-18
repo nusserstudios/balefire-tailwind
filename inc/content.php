@@ -1,7 +1,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'mb-12' ); ?>>
 
 	<header class="mb-4 entry-header">
-		<?php 
+		<?php
 			the_title( sprintf( '<h2 class="mb-1 text-2xl font-extrabold leading-tight entry-title md:text-3xl"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
 		?>
 		<time datetime="<?php echo get_the_date( 'c' ); ?>" itemprop="datePublished" class="text-lg text-neutral-900 dark:text-neutral-200">
@@ -11,16 +11,24 @@
 
 	<?php if ( is_search() || is_archive() ) : ?>
 
-		<div class="entry-summary">
+		<div class="prose entry-summary dark:prose-invert max-w-none">
+			<?php
+			if ( has_post_thumbnail() ) :
+				?>
+				<a href="<?php the_permalink(); ?>" class="block mb-4">
+					<?php the_post_thumbnail( 'full', array( 'class' => 'w-full h-auto' ) ); ?>
+				</a>
+			<?php endif; ?>
+			
 			<?php the_excerpt(); ?>
 		</div>
 
 	<?php else : ?>
 
-		<div class="entry-content">
+		<div class="prose entry-content dark:prose-invert max-w-none">
 			<?php
 			/* translators: %s: Name of current post */
-			the_content(
+			the_excerpt(
 				sprintf(
 					__( 'Continue reading %s', 'balefire' ),
 					the_title( '<span class="screen-reader-text">"', '"</span>', false )

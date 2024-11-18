@@ -17,6 +17,13 @@
 </div>
 
 <?php wp_footer(); ?>
+<?php if (is_user_logged_in() && current_user_can('administrator')) : ?>
+    <div class="w-full bg-white border-y border-neutral-200">
+        <div class="container px-4 mx-auto text-center py-9">
+            <?php edit_post_link('Edit Post', '', '', null, 'edit-post-link'); ?>
+        </div>
+    </div>
+<?php endif; ?>
 </body>
 
 </html>

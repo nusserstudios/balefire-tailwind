@@ -17,6 +17,10 @@ module.exports = {
         'max-w-screen-*',
         'text-*',
         'dark:text-*',
+        '*-neutral-*',  
+        '*-gray-*',  
+        '*-zinc-*',
+        'py-12'
     ],
     theme: {
         container: {

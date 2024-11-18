@@ -23,18 +23,18 @@ msgstr ""
 
 #: 404.php:12
 msgid "Epic 404 - Article Not Found"
-msgstr "404 pico Ğ Artigo n‹o encontrado"
+msgstr "404 ï¿½pico ï¿½ Artigo nï¿½o encontrado"
 
 #: 404.php:16
 msgid ""
 "The article you were looking for was not found, but maybe try looking again!"
 msgstr ""
-"O artigo que voc estava procurando n‹o foi encontrado, talvez queira "
+"O artigo que vocï¿½ estava procurando nï¿½o foi encontrado, talvez queira "
 "tentar outra vez!"
 
 #: assets/functions/admin.php:35
 msgid "The RSS Feed is either empty or unavailable."
-msgstr "O feed RSS est‡ vazio ou indispon’vel."
+msgstr "O feed RSS estï¿½ vazio ou indisponï¿½vel."
 
 #: assets/functions/admin.php:39
 msgid "j F Y @ g:i a"
@@ -80,7 +80,7 @@ msgstr "(Editar)"
 
 #: assets/functions/comments.php:23
 msgid "Your comment is awaiting moderation."
-msgstr "O seu coment‡rio aguarda modera‹o."
+msgstr "O seu comentï¿½rio aguarda moderaï¿½ï¿½o."
 
 #: assets/functions/custom-post-type.php:22
 msgid "Custom Types"
@@ -132,7 +132,7 @@ msgstr "Nada encontrado na lixeira"
 
 #: assets/functions/custom-post-type.php:36
 msgid "This is the example custom post type"
-msgstr "Este  o exemplo de tipo de postagem personalizada"
+msgstr "Este ï¿½ o exemplo de tipo de postagem personalizada"
 
 #: assets/functions/custom-post-type.php:73
 msgid "Custom Categories"
@@ -220,7 +220,7 @@ msgstr "O menu principal"
 
 #: assets/functions/menu.php:6 assets/functions/menu.php:55
 msgid "Footer Links"
-msgstr "Links do rodap"
+msgstr "Links do rodapï¿½"
 
 #: assets/functions/page-navi.php:35
 msgid "First"
@@ -236,7 +236,7 @@ msgstr "Seguinte"
 
 #: assets/functions/page-navi.php:52
 msgid "Last"
-msgstr "òltima"
+msgstr "ï¿½ltima"
 
 #: assets/functions/related-posts.php:18
 msgid "<h4>Related Posts</h4>"
@@ -263,24 +263,24 @@ msgstr "A barra lateral offcanvas."
 msgctxt "comments title"
 msgid "One comment on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
-msgstr[0] "Um coment‡rio em &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s coment‡rios em &ldquo;%2$s&rdquo;"
+msgstr[0] "Um comentï¿½rio em &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s comentï¿½rios em &ldquo;%2$s&rdquo;"
 
 #: comments.php:24 comments.php:40
 msgid "Comment navigation"
-msgstr "Navega‹o de coment‡rios"
+msgstr "Navegaï¿½ï¿½o de comentï¿½rios"
 
 #: comments.php:27 comments.php:43
 msgid "Older Comments"
-msgstr "Coment‡rios mais antigos"
+msgstr "Comentï¿½rios mais antigos"
 
 #: comments.php:28 comments.php:44
 msgid "Newer Comments"
-msgstr "Coment‡rios mais recentes"
+msgstr "Comentï¿½rios mais recentes"
 
 #: comments.php:56
 msgid "Comments are closed."
-msgstr "Os coment‡rios est‹os fechados."
+msgstr "Os comentï¿½rios estï¿½os fechados."
 
 #: parts/content-missing.php:6
 msgid "Sorry, No Results."
@@ -292,11 +292,11 @@ msgstr "Tente pesquisar novamente."
 
 #: parts/content-missing.php:18 parts/content-missing.php:36
 msgid "This is the error message in the parts/content-missing.php template."
-msgstr "Esta  a mensagem de erro no modelo parts/content-missing.php."
+msgstr "Esta ï¿½ a mensagem de erro no modelo parts/content-missing.php."
 
 #: parts/content-missing.php:24
 msgid "Oops, Post Not Found!"
-msgstr "Ops! Postagem n‹o encontrada!"
+msgstr "Ops! Postagem nï¿½o encontrada!"
 
 #: parts/content-missing.php:28
 msgid "Uh Oh. Something is missing. Try double checking things."
@@ -312,7 +312,7 @@ msgstr "Etiquetas:"
 
 #: parts/loop-single.php:14
 msgid "Pages:"
-msgstr "P‡ginas:"
+msgstr "Pï¿½ginas:"
 
 #: parts/nav-offcanvas-topbar.php:16 parts/nav-offcanvas.php:10
 #: parts/nav-title-bar.php:7
@@ -329,17 +329,17 @@ msgid "Search for:"
 msgstr "Procurar por:"
 
 #: searchform.php:4
-msgctxt "balefirewp"
+msgctxt "balefire"
 msgid "Search..."
-msgstr "ProcurarÉ"
+msgstr "Procurarï¿½"
 
 #: searchform.php:4
-msgctxt "balefirewp"
+msgctxt "balefire"
 msgid "Search for:"
 msgstr "Procurar por:"
 
 #: searchform.php:6
-msgctxt "balefirewp"
+msgctxt "balefire"
 msgid "Search"
 msgstr "Procurar"
 

@@ -1,39 +1,40 @@
-h1 {
+h1, h1.wp-block-heading {
     @apply text-5xl md:text-7xl;
 }
-h2 {
+h2, h2.wp-block-heading {
     @apply text-4xl md:text-5xl;
 }
-h3 {
+h2.wp-block-heading {
+    @apply pb-6 font-extrabold;
+}
+h3, h3.wp-block-heading {
     @apply text-3xl md:text-4xl;
 }
-h4 {
+h4, h4.wp-block-heading {
     @apply text-2xl md:text-3xl;
 }
-h5 {
+h5, h5.wp-block-heading {
     @apply text-xl md:text-2xl;
 }
-h6 {
+h6, h6.wp-block-heading {
     @apply text-lg md:text-xl;
 }
-
+.page-title {
+    @apply text-4xl font-bold capitalize text-neutral-900 dark:text-neutral-100;
+}
 header#masthead .sub-menu {
     @apply relative w-full md:mt-1 md:rounded-lg md:border md:shadow-lg md:bg-white md:border-neutral-200 md:w-auto md:text-base md:z-10 md:absolute md:dark:bg-neutral-800 md:dark:border-neutral-600;
 }
-
 ul.sub-menu {
     @apply absolute p-2;
 }
-
 header#masthead .sub-menu li {
     @apply w-full py-2 text-neutral-700 md:mr-4 dark:text-white;
 }
-
 /* Ensuring the submenu items are relatively positioned */
 #primary-menu li:has(ul.sub-menu) > a {
     @apply relative md:mr-4;
 }
-
 /* Creating the triangle shape using the ::after pseudo-element */
 #primary-menu li:has(ul.sub-menu) > a::after {
     content: '';
@@ -46,33 +47,17 @@ header#masthead .sub-menu li {
     border-top: 5px solid currentColor; /* using the text color of the anchor */
     display: inline-block;
 }
-
 #primary-menu-toggle {
    @apply ml-auto;
 }
-
 article > *:not(.entry-content),
 .entry-content > * {
     @apply mx-auto text-xl max-w-7xl;
 }
-
 header.entry-header {
     @apply capitalize;
 }
-
 .entry-content, .block-editor-block-list__layout {
-    h1 {
-        @apply text-2xl capitalize;
-    }
-
-    h2 {
-        @apply text-xl;
-    }
-
-    h3 {
-        @apply text-lg;
-    }
-
     p, ul, ol {
         a {
             @apply underline text-primary;
@@ -124,6 +109,10 @@ header.entry-header {
         @apply shadow-sm bg-neutral-50 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary dark:shadow-sm;
     }
 
+    textarea + p.form-submit {
+        @apply my-6;
+    }    
+
     .comment-form-cookies-consent {
         @apply flex flex-row items-center gap-3 my-4;
     }
@@ -145,6 +134,6 @@ header.entry-header {
     }
 }
 
-.page-title {
-    @apply text-4xl font-bold capitalize text-neutral-900 dark:text-neutral-100;
+a.edit-post-link {
+    @apply px-5 py-4 mx-auto my-2 text-lg font-medium font-bold text-white transition-colors duration-300 rounded-lg bg-neutral-950 hover:bg-neutral-800 focus:ring-4 focus:ring-neutral-500;
 }

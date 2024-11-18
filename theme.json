@@ -8,6 +8,11 @@
     "color": {
       "palette": [
         {
+          "name": "Default",
+          "slug": "default",
+          "color": "#faab45"
+        },
+        {
           "name": "Primary",
           "slug": "primary",
           "color": "#faab45"

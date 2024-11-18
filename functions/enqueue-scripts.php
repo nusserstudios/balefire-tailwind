@@ -22,3 +22,23 @@ function balefire_enqueue_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'balefire_enqueue_scripts' );
+
+/**
+ * Register Block Patterns for Balefire Theme
+ */
+function balefire_register_block_patterns() {
+    // Register pattern category if you want to group your patterns
+    if ( function_exists( 'register_block_pattern_category' ) ) {
+        register_block_pattern_category(
+            'balefire',
+            array( 'label' => __( 'Balefire', 'balefire' ) )
+        );
+    }
+}
+add_action( 'init', 'balefire_register_block_patterns' );
+
+add_action('init', function() {
+    error_log('Theme directory: ' . get_template_directory());
+    error_log('Patterns directory: ' . get_template_directory() . '/patterns');
+    error_log('Pattern file exists: ' . (file_exists(get_template_directory() . '/patterns/hero.php') ? 'yes' : 'no'));
+});

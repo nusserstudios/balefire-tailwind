@@ -15,7 +15,7 @@ function balefire_related_posts() {
 		);
 		$related_posts = get_posts( $args );
 		if($related_posts) {
-		echo __( '<h4>Related Posts</h4>', 'balefirewp' );
+		echo __( '<h4>Related Posts</h4>', 'balefire' );
 		echo '<ul class="balefire-related-posts">';
 			foreach ( $related_posts as $post ) : setup_postdata( $post ); ?>
 				<li class="related_post">
